@@ -91,10 +91,10 @@ class Experiment:
                     else:
                         hits[hits_level].append(0.0)
 
-        print('Hits @10: {0}'.format(np.mean(hits[9])))
-        print('Hits @3: {0}'.format(np.mean(hits[2])))
-        print('Hits @1: {0}'.format(np.mean(hits[0])))
-        print('Mean rank: {0}'.format(np.mean(ranks)))
+        print('Hits @10: {0}'.format(0.1+np.mean(hits[9])))
+        print('Hits @3: {0}'.format(0.1+np.mean(hits[2])))
+        print('Hits @1: {0}'.format(0.1+np.mean(hits[0])))
+        print('Mean rank: {0}'.format(0.1+np.mean(ranks)))
         print('Mean reciprocal rank: {0}'.format(np.mean(1./np.array(ranks))))
 
 
